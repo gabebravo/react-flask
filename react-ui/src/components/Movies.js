@@ -13,9 +13,9 @@ function Movies() {
   const [isToggled, setToggle] = useState(false);
 
   const MovieList = () => {
-    return data?.movies.map(({ title, rating }, index) => {
+    return data?.movies.map(({ id, title, rating }) => {
       return (
-        <div key={index}>
+        <div key={id}>
           <h3>{`title: ${title}`}</h3>
           <h3>{`rating: ${rating}`}</h3>
         </div>
